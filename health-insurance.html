@@ -3,73 +3,76 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SLEJR1CDJ');
+  </script>
 
-  gtag('config', 'G-0SLEJR1CDJ');
-</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Siddig's Portfolio - Projects</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Health Insurance Regression Analysis | Siddig Mohamed</title>
+  <meta content="Predictive modeling of US health insurance costs using R and multiple linear regression." name="description">
 
   <!-- Favicons -->
   <link href="images/bitmoji.png" rel="icon">
   <link href="images/bitmoji.png" rel="apple-touch-icon">
 
-  <!-- CSS Files -->
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS File (Midnight Sage Theme) -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <!-- Custom Image Styling for Single Image Display -->
+  /* Custom Image Styling for Single Image Display */
+  <style>
+    .single-project-img {
+      width: 100%;
+      height: auto; /* Lets the image scale naturally */
+      max-height: 80vh; /* Prevents it from getting absurdly tall on massive screens */
+      object-fit: contain; 
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top header-scrolled">
     <div class="container d-flex align-items-center justify-content-between">
-
       <h1 class="logo"><a href="index.html">Siddig's Portfolio</a></h1>
-      <!-- Uncomment below to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-         <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-         <li><a class="nav-link scrollto " href="index.html#work">Work</a></li>
-          
+          <li><a class="nav-link scrollto active" href="index.html#work">Work</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(images/analytics.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="hero-content display-table">
+  <!-- Miniature Hero for Sub-Pages -->
+  <div class="hero hero-single route bg-image" style="background-image: url(images/analytics.jpg); height: 40vh;">
+    <div class="overlay-itro" style="opacity: 0.9;"></div>
+    <div class="hero-content display-table" style="height: 40vh;">
       <div class="table-cell">
-        <div class="container">
-          <h2 class="hero-title mb-4">Project Details</h2>
-          <ol class="breadcrumb d-flex justify-content-center">
+        <div class="container text-center pt-5 mt-5">
+          <h2 class="hero-title mb-4" style="font-size: 2.5rem;">Health Insurance Regression Analysis</h2>
+          <ol class="breadcrumb d-flex justify-content-center" style="background: transparent;">
             <li class="breadcrumb-item">
-              <a href="#">Home</a>
+              <a href="index.html" style="color: var(--accent-light);">Home</a>
             </li>
-            <li class="breadcrumb-item active">Project Details</li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: var(--text-muted);">Project Details</li>
           </ol>
         </div>
       </div>
@@ -79,38 +82,70 @@
   <main id="main">
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <section id="portfolio-details" class="portfolio-details pt-5 pb-5">
+      <div class="container mt-4 mb-5">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper">
-                  <img src="images/health.jpg" alt=" "class="img-fluid">
-                </div>
-                
+        <!-- TOP ROW: Full Width Image Display -->
+        <div class="row reveal mb-4">
+          <div class="col-12">
+            <div class="bento-card p-2 p-md-4" style="background: var(--bg-dark); border: 1px solid var(--card-border);">
+              
+              <!-- Cleaned Single Image Display -->
+              <div style="border-radius: 12px; overflow: hidden; position: relative;">
+                <img src="images/health.jpg" alt="Health Insurance Analysis Output" class="single-project-img">
               </div>
-              <div class="swiper-pagination"></div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM ROW: Split Info Cards (Perfectly Aligned) -->
+        <div class="row gy-4 reveal">
+          
+          <!-- Quick Facts Card -->
+          <div class="col-lg-4 d-flex">
+            <div class="bento-card w-100 d-flex flex-column p-4 p-lg-5">
+              <h3 class="fw-bold mb-4" style="color: var(--text-main); font-size: 1.75rem; border-bottom: 1px solid var(--card-border); padding-bottom: 15px;">Project Intel</h3>
+              
+              <div class="mb-4">
+                <strong style="color: var(--accent-light); font-size: 1.1rem; display: block; margin-bottom: 12px;">Tools Used:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-pill m-0">R</span> 
+                  <span class="tech-pill m-0">Regression</span>
+                  <span class="tech-pill m-0">Predictive Modeling</span>
+                  <span class="tech-pill m-0">ggplot</span>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <strong style="color: var(--accent-light); font-size: 1.1rem; display: block; margin-bottom: 8px;">Timeline:</strong>
+                <span style="color: var(--text-muted); font-size: 1.1rem;">January 2021</span>
+              </div>
+              
+              <!-- mt-auto pushes this button to the absolute bottom -->
+              <div class="mt-auto pt-4">
+                <a href="https://github.com/siddig-m/U.S-Health-Insurance-Regression-Analysis" target="_blank" class="btn btn-outline-info rounded-pill w-100 py-3 fw-bold shadow-sm">
+                  View Source Code <i class="bi bi-github ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                
-                <li><strong>Tools</strong>: R, Regression, Predictive Modelling, ggplot</li>
-                <li><strong>Project date</strong>: January 2021</li>
-                <li><strong>Code</strong>: <a href="https://github.com/siddig-m/U.S-Health-Insurance-Regression-Analysis" target="_blank">Github Repo</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About</h2>
-              <p>
-                This project delves into the complex world of insurance pricing, particularly in the context of health insurance. It explores how various factors impact insurance costs and aims to predict future charges with precision. The team analyzed a dataset featuring health information of 1338 medical patients and the corresponding insurance charges. Through a comprehensive examination of the data, they sought to uncover significant insights both visually and statistically. The ultimate goal is to develop a multiple regression linear model that can accurately forecast insurance costs based on key variables, such as age, smoking habits, and family size, potentially offering valuable insights for insurance companies and policyholders alike.
+          <!-- Narrative Card -->
+          <div class="col-lg-8 d-flex">
+            <div class="bento-card w-100 d-flex flex-column justify-content-center p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--text-main); font-size: 1.75rem;">The Architecture</h2>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                This project delves into the complex world of insurance pricing, particularly in the context of health insurance. It explores how various factors impact insurance costs and aims to predict future charges with precision. 
+              </p>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                The team analyzed a dataset featuring health information of 1,338 medical patients and their corresponding insurance charges. Through a comprehensive examination of the data, we sought to uncover significant insights both visually and statistically. 
+              </p>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 0;">
+                The ultimate goal was to develop a multiple linear regression model capable of forecasting insurance costs based on key variables (such as age, smoking habits, and family size), potentially offering valuable insights for insurance companies and policyholders alike.
               </p>
             </div>
           </div>
@@ -128,16 +163,14 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Siddig Mohamed</strong>. All Rights Reserved</p>
-            <div class="credits">
-             
-            </div>
+            <p class="copyright">&copy; Copyright <strong>Siddig Mohamed</strong>. All Rights Reserved.</p>
           </div>
         </div>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
+  <!-- Preloader & Back to Top -->
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

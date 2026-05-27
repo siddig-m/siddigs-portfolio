@@ -3,73 +3,112 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SLEJR1CDJ');
+  </script>
 
-  gtag('config', 'G-0SLEJR1CDJ');
-</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Siddig's Portfolio - Projects</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Maine Mercury Analysis | Siddig Mohamed</title>
+  <meta content="Statistical analysis of mercury levels in Maine's lakes using R, t-tests, ANOVA, and ggplot2." name="description">
 
   <!-- Favicons -->
   <link href="images/bitmoji.png" rel="icon">
   <link href="images/bitmoji.png" rel="apple-touch-icon">
 
-  <!-- CSS Files -->
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS File (Midnight Sage Theme) -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Swiper Customizations for Midnight Sage -->
+  <style>
+    /* 1. Override Swiper's default blue theme */
+    :root {
+      --swiper-theme-color: #a3b18a !important; /* Midnight Sage Green */
+      --swiper-navigation-size: 24px !important;
+    }
 
+    /* 2. Image styling */
+    .swiper-slide img {
+      width: 100%;
+      height: 600px;
+      object-fit: contain; 
+      background: #ffffff; 
+      border-radius: 8px;
+    }
+
+    /* 3. Modern "Pill" Pagination Dots */
+    .swiper-pagination-bullet {
+      background: rgba(163, 177, 138, 0.4) !important;
+      width: 12px;
+      height: 12px;
+      opacity: 1 !important;
+      transition: all 0.3s ease;
+    }
+    .swiper-pagination-bullet-active {
+      background: var(--accent-light) !important;
+      width: 30px !important; /* Stretches the active dot into a pill shape */
+      border-radius: 10px !important;
+    }
+
+    /* 4. Navigation Arrows Styling */
+    .swiper-button-next, .swiper-button-prev {
+      background: rgba(17, 20, 17, 0.8); /* Dark background so arrows pop against white images */
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: var(--accent-light) !important;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(4px);
+    }
+    .swiper-button-next:hover, .swiper-button-prev:hover {
+      background: var(--accent-light);
+      color: var(--bg-dark) !important;
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top header-scrolled">
     <div class="container d-flex align-items-center justify-content-between">
-
       <h1 class="logo"><a href="index.html">Siddig's Portfolio</a></h1>
-      <!-- Uncomment below to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-         <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-         <li><a class="nav-link scrollto " href="index.html#work">Work</a></li>
-          
+          <li><a class="nav-link scrollto active" href="index.html#work">Work</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(images/analytics.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="hero-content display-table">
+  <!-- Miniature Hero for Sub-Pages -->
+  <div class="hero hero-single route bg-image" style="background-image: url(images/analytics.jpg); height: 40vh;">
+    <div class="overlay-itro" style="opacity: 0.9;"></div>
+    <div class="hero-content display-table" style="height: 40vh;">
       <div class="table-cell">
-        <div class="container">
-          <h2 class="hero-title mb-4">Project Details</h2>
-          <ol class="breadcrumb d-flex justify-content-center">
+        <div class="container text-center pt-5 mt-5">
+          <h2 class="hero-title mb-4" style="font-size: 2.5rem;">Concerning Mercury Levels in Maine?</h2>
+          <ol class="breadcrumb d-flex justify-content-center" style="background: transparent;">
             <li class="breadcrumb-item">
-              <a href="#">Home</a>
+              <a href="index.html" style="color: var(--accent-light);">Home</a>
             </li>
-            <li class="breadcrumb-item active">Project Details</li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: var(--text-muted);">Project Details</li>
           </ol>
         </div>
       </div>
@@ -79,47 +118,87 @@
   <main id="main">
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <section id="portfolio-details" class="portfolio-details pt-5 pb-5">
+      <div class="container mt-4 mb-5">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                
-                <div class="swiper-slide">
-                  <img src="images/hg_histogram.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="images/dam_boxplot.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/laketype_boxplots.png" alt="" class="img-fluid">
-                </div>
+        <!-- TOP ROW: Full Width Image Slider -->
+        <div class="row reveal mb-4">
+          <div class="col-12">
+            <div class="bento-card p-2 p-md-4" style="background: var(--bg-dark); border: 1px solid var(--card-border);">
               
+              <!-- Swiper Image Slider -->
+              <div class="portfolio-details-slider custom-swiper swiper" style="border-radius: 12px; overflow: hidden; position: relative;">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="images/hg_histogram.png" alt="Mercury Histogram">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/dam_boxplot.png" alt="Dam Boxplot">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/laketype_boxplots.png" alt="Lake Type Boxplots">
+                  </div>
+                </div>
+                
+                <!-- Added Navigation Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-pagination"></div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM ROW: Split Info Cards (Perfectly Aligned) -->
+        <div class="row gy-4 reveal">
+          
+          <!-- Quick Facts Card -->
+          <div class="col-lg-4 d-flex">
+            <div class="bento-card w-100 d-flex flex-column p-4 p-lg-5">
+              <h3 class="fw-bold mb-4" style="color: var(--text-main); font-size: 1.75rem; border-bottom: 1px solid var(--card-border); padding-bottom: 15px;">Project Intel</h3>
+              
+              <div class="mb-4">
+                <strong style="color: var(--accent-light); font-size: 1.1rem; display: block; margin-bottom: 12px;">Tools Used:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-pill m-0">R</span> 
+                  <span class="tech-pill m-0">ggplot2</span>
+                  <span class="tech-pill m-0">t-tests</span>
+                  <span class="tech-pill m-0">ANOVA</span>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <strong style="color: var(--accent-light); font-size: 1.1rem; display: block; margin-bottom: 8px;">Timeline:</strong>
+                <span style="color: var(--text-muted); font-size: 1.1rem;">February 2023</span>
+              </div>
+              
+              <!-- mt-auto pushes this button to the absolute bottom -->
+              <div class="mt-auto pt-4">
+                <a href="https://github.com/siddig-m/Maine-Mercury" target="_blank" class="btn btn-outline-info rounded-pill w-100 py-3 fw-bold shadow-sm">
+                  View Source Code <i class="bi bi-github ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                
-                <li><strong>Tools</strong>: R, t-tests, ANOVA Test, ggplot2</li>
-                <li><strong>Project date</strong>: Febraury 2023</li>
-                <li><strong>Code</strong>: <a href="https://github.com/siddig-m/Maine-Mercury" target="_blank">Github Repo</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About</h2>
-              <p>
-                In this project, we delve into the factors influencing mercury levels in fish across Maine's lakes. We address three crucial research questions using data from 120 lakes in the state. By employing statistical methods such as one-sample t-tests, two-sided t-tests, and ANOVA tests, we provide valuable insights into mercury levels in Maine's fish populations. These findings can guide policy decisions and actions to preserve the health of Maine's lakes and their aquatic ecosystems.
-            </p>
+          <!-- Narrative Card -->
+          <div class="col-lg-8 d-flex">
+            <div class="bento-card w-100 d-flex flex-column justify-content-center p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--text-main); font-size: 1.75rem;">The Architecture</h2>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                In this project, we delve into the factors influencing mercury levels in fish across Maine's lakes. We address three crucial research questions using data from 120 lakes in the state. 
+              </p>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                By employing statistical methods such as one-sample t-tests, two-sided t-tests, and ANOVA tests, we provide valuable insights into mercury levels in Maine's fish populations. 
+              </p>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 0;">
+                These findings can guide policy decisions and actions to preserve the health of Maine's lakes and their aquatic ecosystems.
+              </p>
             </div>
           </div>
 
@@ -136,16 +215,14 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Siddig Mohamed</strong>. All Rights Reserved</p>
-            <div class="credits">
-             
-            </div>
+            <p class="copyright">&copy; Copyright <strong>Siddig Mohamed</strong>. All Rights Reserved.</p>
           </div>
         </div>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
+  <!-- Preloader & Back to Top -->
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -159,6 +236,29 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Custom Swiper Initialization to activate the new Arrows -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.custom-swiper', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
+    });
+  </script>
 
 </body>
 

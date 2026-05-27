@@ -2,73 +2,65 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0SLEJR1CDJ');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SLEJR1CDJ');
+  </script>
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Siddig's Portfolio - Projects</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Toronto Airbnb Analysis | Siddig Mohamed</title>
+  <meta content="Tableau Dashboard analyzing the Toronto Airbnb Market." name="description">
 
   <!-- Favicons -->
   <link href="images/bitmoji.png" rel="icon">
   <link href="images/bitmoji.png" rel="apple-touch-icon">
 
-  <!--  CSS Files -->
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!--  Main CSS File -->
+  <!-- Main CSS File (Midnight Sage Theme) -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top header-scrolled">
     <div class="container d-flex align-items-center justify-content-between">
-
       <h1 class="logo"><a href="index.html">Siddig's Portfolio</a></h1>
-      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-         <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-         <li><a class="nav-link scrollto " href="index.html#work">Work</a></li>
-          
+          <li><a class="nav-link scrollto active" href="index.html#work">Work</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(images/analytics.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="hero-content display-table">
+  <!-- Miniature Hero for Sub-Pages -->
+  <div class="hero hero-single route bg-image" style="background-image: url(images/analytics.jpg); height: 40vh;">
+    <div class="overlay-itro" style="opacity: 0.9;"></div>
+    <div class="hero-content display-table" style="height: 40vh;">
       <div class="table-cell">
-        <div class="container">
-          <h2 class="hero-title mb-4">Project Details</h2>
-          <ol class="breadcrumb d-flex justify-content-center">
+        <div class="container text-center pt-5 mt-5">
+          <h2 class="hero-title mb-4" style="font-size: 2.5rem;">Exploring the Toronto Airbnb Scene</h2>
+          <ol class="breadcrumb d-flex justify-content-center" style="background: transparent;">
             <li class="breadcrumb-item">
-              <a href="#">Home</a>
+              <a href="index.html" style="color: var(--accent-light);">Home</a>
             </li>
-            <li class="breadcrumb-item active">Project Details</li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: var(--text-muted);">Project Details</li>
           </ol>
         </div>
       </div>
@@ -78,45 +70,101 @@
   <main id="main">
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <section id="portfolio-details" class="portfolio-details pt-5 pb-5">
+      <div class="container mt-4 mb-5">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            
-            <div class="portfolio-details-slider ">
+        <!-- TOP ROW: Full Width Tableau Dashboard -->
+        <div class="row reveal mb-4">
+          <div class="col-12">
+            <div class="bento-card p-2 p-md-4" style="background: var(--bg-dark); border: 1px solid var(--card-border);">
               
-              <div class="swiper-wrapper align-items-center">
-<div class='tableauPlaceholder' id='viz1694570286632' style='position: relative'><noscript><a href='#'><img alt='Exploring the Toronto AirBnb Scene ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploringtheTorontoAirBnbScene&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExploringtheTorontoAirBnbScene&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploringtheTorontoAirBnbScene&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1694570286632');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1200px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='877px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1200px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='877px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                <div class="swiper">
+              <!-- Cleaned Tableau Embed Code -->
+              <div class='tableauPlaceholder' id='viz1694570286632' style='position: relative; width: 100%; height: 750px; border-radius: 12px; overflow: hidden;'>
+                <noscript>
+                  <a href='#'><img alt='Exploring the Toronto AirBnb Scene' src='https://public.tableau.com/static/images/Ex/ExploringtheTorontoAirBnbScene/Dashboard2/1_rss.png' style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='site_root' value='' />
+                  <param name='name' value='ExploringtheTorontoAirBnbScene&#47;Dashboard2' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https://public.tableau.com/static/images/Ex/ExploringtheTorontoAirBnbScene/Dashboard2/1.png' /> 
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en-US' />
+                  <param name='filter' value='publish=yes' />
+                </object>
+              </div>                
+              
+              <!-- Tableau Sizing Script -->
+              <script type='text/javascript'>                    
+                  var divElement = document.getElementById('viz1694570286632');                    
+                  var vizElement = divElement.getElementsByTagName('object')[0];                    
                   
-                  <img src="images/" alt="" class="img-fluid">
+                  vizElement.style.width = '100%';
+                  vizElement.style.height = '750px'; 
+                  
+                  var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+              </script>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM ROW: Split Info Cards (Perfectly Aligned) -->
+        <div class="row gy-4 reveal">
+          
+          <!-- Quick Facts Card -->
+          <div class="col-lg-4 d-flex">
+            <div class="bento-card w-100 d-flex flex-column p-4 p-lg-5">
+              <h3 class="fw-bold mb-4" style="color: var(--text-main); font-size: 1.75rem; border-bottom: 1px solid var(--card-border); padding-bottom: 15px;">Project Intel</h3>
+              
+              <div class="mb-4">
+                <strong style="color: var(--accent-light); font-size: 1.1rem; display: block; margin-bottom: 12px;">Tools Used:</strong>
+                <!-- Fixed Tech Pills using Gap -->
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tech-pill m-0">Tableau</span> 
+                  <span class="tech-pill m-0">Data Viz</span>
                 </div>
-                
               </div>
-              <div class="swiper-pagination"></div>
+              
+              <div class="mb-4">
+                <strong style="color: var(--accent-light); font-size: 1.1rem; display: block; margin-bottom: 8px;">Timeline:</strong>
+                <span style="color: var(--text-muted); font-size: 1.1rem;">August 2023</span>
+              </div>
+              
+              <!-- mt-auto pushes this button to the absolute bottom -->
+              <div class="mt-auto pt-4">
+                <a href="https://public.tableau.com/shared/SJG39FJDM?:display_count=n&:origin=viz_share_link" target="_blank" class="btn btn-outline-info rounded-pill w-100 py-3 fw-bold shadow-sm">
+                  View Live on Tableau <i class="bi bi-box-arrow-up-right ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                
-                <li><strong>Tools</strong>: Tableau, Data Visualiazation</li>
-                <li><strong>Project date</strong>: August 2023</li>
-                <li><strong>Link</strong>: <a href="https://public.tableau.com/shared/SJG39FJDM?:display_count=n&:origin=viz_share_link" target="_blank">Tableau Public</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About</h2>
-              <p>
+          <!-- Narrative Card -->
+          <div class="col-lg-8 d-flex">
+            <div class="bento-card w-100 d-flex flex-column justify-content-center p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--text-main); font-size: 1.75rem;">The Architecture</h2>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
                 This project crafted an informative Airbnb dashboard for Toronto, highlighting key metrics. With 18,921 listings and 12,701 hosts, users can gauge the city's Airbnb landscape, featuring an average nightly price of $178.
-
-The dashboard's four main plots reveal popular neighborhoods, price distribution, host growth over time, and geographic listing distribution. Investors can identify competitive areas, and users can filter listings by type, with entire homes/apartments leading.
-
-This tool empowers hosts and investors with insights into Toronto's dynamic Airbnb market, aiding decision-making and property selection.</p>
+              </p>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                The dashboard's four main plots reveal popular neighborhoods, price distribution, host growth over time, and geographic listing distribution. Investors can identify competitive areas, and users can filter listings by type, with entire homes/apartments leading.
+              </p>
+              
+              <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 0;">
+                This tool empowers hosts and investors with insights into Toronto's dynamic Airbnb market, aiding decision-making and property selection.
+              </p>
             </div>
           </div>
 
@@ -133,16 +181,14 @@ This tool empowers hosts and investors with insights into Toronto's dynamic Airb
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Siddig Mohamed</strong>. All Rights Reserved</p>
-            <div class="credits">
-             
-            </div>
+            <p class="copyright">&copy; Copyright <strong>Siddig Mohamed</strong>. All Rights Reserved.</p>
           </div>
         </div>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
+  <!-- Preloader & Back to Top -->
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

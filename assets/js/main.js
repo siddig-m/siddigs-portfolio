@@ -233,3 +233,26 @@
   new PureCounter();
 
 })()
+
+// Modern Scroll Reveal using Intersection Observer
+document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+  
+  const revealOptions = {
+    threshold: 0.15, // Triggers when 15% of the item is visible
+    rootMargin: "0px 0px -50px 0px" 
+  };
+
+  const revealOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Stops animating once it's loaded
+      }
+    });
+  }, revealOptions);
+
+  reveals.forEach(reveal => {
+    revealOnScroll.observe(reveal);
+  });
+});
